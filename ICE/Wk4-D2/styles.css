@@ -1,0 +1,19 @@
+body {background-color: #5da0d7}
+header {
+    color: white;
+    text-align: center;
+}
+body {
+    color: white;
+    text-align: center;
+}
+p.footer {
+    color: black;
+    text-align: center;
+}
+ol {
+    color: black;
+}
+img {
+    width:200px;
+}

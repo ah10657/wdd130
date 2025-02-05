@@ -1,0 +1,55 @@
+h1 {
+    color:slateblue
+}
+/* Descendant Selector */
+footer p {
+    font-size: larger;;
+    background-color: lightblue;
+}
+
+/* Class Selector */
+.my-footer {
+    font-size: larger;;
+    background-color: lightblue;
+}
+
+/* ID Selector */
+#my-footer {
+    font-size: larger;;
+    background-color: lightblue;
+}
+
+/* ID Selector */
+footer.my-footer {
+    font-size: larger;;
+    background-color: lightblue;
+}
+
+nav, footer {
+    background-color: steelblue;
+    color: white;
+    padding: 10px
+}
+
+img {
+    width: 300px;
+    display: block;
+    margin: 15px/*Top*/   30px/*Right*/   45px/*Bottom*/   60px/*Left*/;
+}
+/*
+Absolute:
+px
+pt
+
+Relative:
+%
+em
+rem
+vw
+vh
+*/
+
+body {
+    text-align: center;
+}
+
