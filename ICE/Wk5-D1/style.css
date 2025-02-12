@@ -1,0 +1,9 @@
+header.top {
+    max-width: 100%;
+}
+footer {
+    background-color: #737373;
+}
+footer.pics {
+    border-radius: 50%;
+}
