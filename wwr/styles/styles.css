@@ -50,13 +50,14 @@ h2 {
 h3 {
     color: #124266;
 }
+
 #hero-msg {
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
 }
 
-#hero-msg h1, #hero-msg h3, #rd-header h1 {
+#hero-msg h1, #hero-msg h3{
     text-align: center;
     -webkit-text-stroke: 0.25px white;
     text-shadow: 2px 2px 2px;
@@ -249,7 +250,7 @@ main section img {
         display: none;
     }
     #hero-msg h1 {
-        color: #6f7364;
+        color: #124266;
     }
     .home-title {
         font-size: 25px;

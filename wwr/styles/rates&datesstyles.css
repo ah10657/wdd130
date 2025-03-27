@@ -1,20 +1,195 @@
-#rd-hero-img {
-    width: 100vw;
-    object-fit: cover;
-}
-
-#rd-grid {
+/* Hero Section */
+#rd-hero {
     display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 12;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1.5fr 1fr;
+    margin-top: -100px;
+    position: relative;
 }
 
-#river-img {
-    height: 300px;
-    width: 500px;
-    grid-column: 1/2;
+#rd-hero-img {
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    height: auto;
+    z-index: -1;
 }
 
-h2, h3 {
-    grid-column: 2/3;
+#rd-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    color: #124266;
+    font-family: "Russo One", sans-serif;
+    -webkit-text-stroke: 0.25px white;
+    text-shadow: 2px 2px 2px;
+}
+
+/* Grid Layout */
+
+.rd-grid > section {
+    display: grid; /* Use grid for internal layout */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Two columns: one for the image, one for the text */
+    gap: 20px; /* Add spacing between the image and text */
+    align-items: center; /* Vertically align items */
+    text-align: left; /* Align text to the left */
+}
+
+/* Section Assignments */
+.gc-3-night, .gc-6-night, .sr-5-night, .d-6-night  { 
+    grid-row: 1 / 3; 
+}
+
+/* Image Styles */
+#river-img1, #river-img2, #river-img3, #river-img4 {
+    padding: 30px;
+    width: 400px;
+    height: auto;
+}
+
+/* Message Styling */
+#msg-odd, #msg-even {
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#msg-odd1, #msg-odd2 {
+    grid-column: 3; /* Place the text in the second column */
+    padding: 10px; /* Add padding for better spacing */
+    max-width: 500px; /* Optional: Limit the maximum width of the text */
+}
+
+#msg-even1, #msg-even2 {
+    grid-column: 2; /* Place the text in the second column */
+    padding: 10px; /* Add padding for better spacing */
+    max-width: 500px; /* Optional: Limit the maximum width of the text */
+}
+
+#msg-odd1, #msg-even1, #msg-odd2, #msg-even2 { 
+    grid-row: 1 / 3; 
+}
+
+/* Button Styling */
+.rd-button {
+    background-color: #fcdf79;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.image-container {
+    grid-column: 2; /* Place the image in the first column */
+    position: relative; /* Make the container a positioning context */
+    width: 100%; /* Ensure the container matches the image width */
+}
+
+.image-container img {
+    width: 100%; /* Ensure the image fits the container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 800px; /* Optional: Limit the maximum width of the image */
+}
+
+.image-container .rd-button {
+    position: absolute; /* Position the button relative to the container */
+    bottom: 10px; /* Place the button near the bottom */
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    background-color: #fcdf79;
+    border: none;
+    color: #124266;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-container .rd-button:hover {
+    background-color: #79c5d7;
+    color: white;
+}
+
+.image-container2 {
+    grid-column: 3; /* Place the image in the first column */
+    position: relative; /* Make the container a positioning context */
+    width: 100%; /* Ensure the container matches the image width */
+}
+
+.image-container2 img {
+    width: 100%; /* Ensure the image fits the container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 800px; /* Optional: Limit the maximum width of the image */
+}
+
+.image-container2 .rd-button {
+    position: absolute; /* Position the button relative to the container */
+    bottom: 10px; /* Place the button near the bottom */
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    background-color: #fcdf79;
+    border: none;
+    color: #124266;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-container2 .rd-button:hover {
+    background-color: #79c5d7;
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h3 {
+        display: none;
+    }
+    #hero-msg h1 {
+        color: #124266;
+    }
+    .home-title {
+        font-size: 25px;
+    }
+    .rivers-card, .camping-card, .rapids-card {
+        margin: 50px auto;
+        width: 60%;
+    }
+
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
