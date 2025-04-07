@@ -1,0 +1,13 @@
+body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+aside {
+    grid-column: 1;
+}
+
+main {
+    grid-column: 2;
+}
+
