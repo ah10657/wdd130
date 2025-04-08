@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Press+Start+2P&display=swap');
+:root {
+
+    --primary-color: #dd2120;
+    --secondary-color: #a4a3a1;
+    --accent1-color: #0c0c0c;
+    --accent2-color: #e5e5e5;
+
+    --heading-font: "Press Start 2P", "IM Fell French Canon SC", sans-serif;
+    --paragraph-font: "Merriweather Sans", Helvetica, sans-serif;
+  
+    --headline-color-on-white: #dd2120;
+    --headline-color-on-color: white;
+    --paragraph-color-on-white: #dd2120;
+    --paragraph-color-on-color: white;
+    --paragraph-background-color: #dd2120;
+    --nav-link-color: #0c0c0c;
+    --nav-background-color: #e5e5e5;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #dd2120;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+
+p,
+nav {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--headline-color-on-white);
+    text-align: center;
+    align-content: center;
+    margin: 0;
+    padding: 30px;
+    grid-column: 2/3;
+    grid-row: 0/1;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    padding: 30px;
+    margin: 0 auto;
+    display: flex;
+    grid-row: 0/1;
+}
+
+nav hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+nav a {
+    padding: 15px;
+    font-size: 18px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: min-content;
+}
+
+header {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--headline-color-on-white);
+    text-align: center;
+    align-content: center;
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    grid-column: 2/3;
+    grid-row: 0/1;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    padding: 30px;
+    margin: 0 auto;
+    display: flex;
+    grid-row: 0/1;
+}
+
+#aside {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px;
+    grid-auto-flow: row dense;
+    align-items: center;
+    justify-items: center;
+}
+
+#aside .image {
+    height: 100px;
+}
+
+#aside .image:nth-of-type(odd) {
+    grid-column: 2;
+}
+
+#aside .image:nth-of-type(even) {
+    grid-column: 1;
+}
+
+#aside .text:nth-of-type(odd) {
+    grid-column: 1;
+    padding: 20px; /* Add padding for better spacing */
+    margin: 0;
+    height: 100px;
+    align-content: center;
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#aside .text:nth-of-type(even) {
+    grid-column: 2;
+    padding: 20px; /* Add padding for better spacing */
+    margin: 0;
+    height: 100px;
+    align-content: center;
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+main {
+    display: grid;
+    grid-column: 2;
+}
+
+main h4 {
+    text-align: center;
+    grid-column: 1/3;
+}
+
+#small_intro {
+    grid-column: 1/3;
+}
+
+main img {
+    width: 150px;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#first {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+#second {
+    grid-column: 2/3;
+}
+
+.container {
+    justify-items: center;
+    align-content: center;
+}
+
+.right.container {
+    grid-column: 2/3;
+}
+
+#top.container {
+    grid-row: 1/2;
+}
+
+#bottom.container {
+    grid-row: 2/3;
+}
+
+.container.left {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#slideshow {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#slideshow h4 {
+    text-align: center;
+    grid-column: 1/2;
+}
+
+.data {
+    grid-column: 1/2;
+}
+
+.console {
+    justify-items: center;
+    align-content: center;
+}
+
+.screenshot {
+    justify-items: center;
+    align-content: center;
+}
+
+.cartridge {
+    justify-items: center;
+    align-content: center;
+}
+
+.description {
+    grid-column: 2/4;
+}
+
+footer {
+    grid-column: 1 / -1;
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+    padding: 20px;
+    text-align: right;
+    font-size: 12px;
+}
