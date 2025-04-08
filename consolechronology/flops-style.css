@@ -43,7 +43,7 @@ nav hover {
 }
 
 nav a {
-    padding: 15px;
+    padding: 10px;
     font-size: 18px;
 }
 
@@ -148,6 +148,16 @@ h4 {
 
 #content p {
     padding: 15px;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+  text-decoration: none;
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
 }
 
 footer {
