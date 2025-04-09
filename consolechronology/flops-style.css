@@ -47,6 +47,16 @@ nav a {
     font-size: 18px;
 }
 
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+  text-decoration: none;
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
 #header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -148,16 +158,6 @@ h4 {
 
 #content p {
     padding: 15px;
-}
-
-nav a:link,
-nav a:visited {
-  color: var(--nav-link-color);
-  text-decoration: none;
-}
-nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
 }
 
 footer {

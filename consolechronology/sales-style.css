@@ -47,6 +47,16 @@ nav a {
     font-size: 18px;
 }
 
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+  text-decoration: none;
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
 #hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -129,16 +139,6 @@ h4 {
 
 .image {
     max-width: 250px;
-}
-
-nav a:link,
-nav a:visited {
-  color: var(--nav-link-color);
-  text-decoration: none;
-}
-nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
 }
 
 footer {
